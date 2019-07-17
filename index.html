@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <a href="#" class="logo"></a>
+        <span class="button">visit to the doctor</span>
+    </header>
+    <section>
+        <div class="board">
+            <span class="not-found"> "No items have been added" </span>
+        </div>
+    </section>
+    </div>
+
+<section class="wrap-form-apply-doctor">
+    <div class="apply_to_doctor">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    <form class="select-doctor" action="#">
+        <select id="select-doctor" name="doctor" >
+            <option value="select">Выберети врача </option>
+            <option value="therapist" class="doctor therapist" data-doc = "therapist">Терапевт</option>
+            <option value="cardiologist" class="doctor cardiologist" data-doc = "cardiologist">Кардиолог</option>
+            <option value="dentist" class="doctor dentist" data-doc = "dentist">Стоматолог</option>
+        </select>
+    </form>
+    <div class="container-for-forms-doctors">
+        <label class="form-request form-therapist" data-doc = "therapist" action="#">
+            <input class="input-form input-form-therapist surname-therapist" type="text" data-input = "therapist" data-value = "surname" placeholder="Фамилия">
+            <input class="input-form input-form-therapist name-therapist" type="text" data-input = "therapist" data-value = "name" placeholder="Имя">
+            <input class="input-form input-form-therapist patronymic-therapist" type="text" data-input = "therapist" data-value = "patronymic" placeholder="Отчество">
+            <input class="input-form input-form-therapist age-therapist" type="text" data-input = "therapist" data-value = "age" placeholder="Возраст">
+            <input class="input-form input-form-therapist purpose_of_visit-therapist" type="text" data-input = "therapist" data-value = "purpose_of_visit" placeholder="Цель визита">
+            <textarea class="input-form input-form-therapist comments comments-therapist" data-input = "therapist" data-value = "comments" placeholder="Ваши коментраии" type="text" rows="4" maxlength="400"></textarea>
+        </label>
+        <label class="form-request form-cardiologist" data-doc = "cardiologist" action="#">
+            <input class="input-form input-form-cardiologist surname-cardiologist" type="text" placeholder="Фамилия">
+            <input class="input-form input-form-cardiologist name-cardiologist" type="text" placeholder="Имя">
+            <input class="input-form input-form-cardiologist patronymic-cardiologist" type="text" placeholder="Отчество">
+            <input class="input-form input-form-cardiologist age-cardiologist" type="text" placeholder="Возраст">
+            <input class="input-form input-form-cardiologist purpose_of_visit-cardiologist" type="text" placeholder="Цель визита">
+            <input class="input-form input-form-cardiologist heart_pressure" type="text" placeholder="Обычное давление">
+            <input class="input-form input-form-cardiologist index_mass" type="text" placeholder="Индекс массы тела">
+            <input class="input-form input-form-cardiologist disease" type="text" placeholder="Заболевания ССС">
+            <textarea class="input-form input-form-cardiologist comments comments-cardiologist"  placeholder="Ваши коментраии" type="text" rows="4" maxlength="400"></textarea>
+        </label>
+        <label class="form-request form-dentist" data-doc = "dentist" action="#">
+            <input class="input-form input-form-dentist surname-dentist" type="text" placeholder="Фамилия">
+            <input class="input-form input-form-dentist name-dentist" type="text" placeholder="Имя">
+            <input class="input-form input-form-dentist patronymic-dentist" type="text" placeholder="Отчество">
+            <input class="input-form input-form-dentist last_visit" type="text" placeholder="Дата последнего посещения">
+            <input class="input-form input-form-dentist purpose_of_visit-dentist" type="text" placeholder="Цель визита">
+            <textarea class="input-form comments comments-dentist"  placeholder="Ваши коментраии" type="text" rows="4" maxlength="400"></textarea>
+        </label>
+        <span class="btn-creat-request">CREATE AN APPLICATION</span>
+    </div>
+</div>
+</section>
+<script src="script/main.js" ></script>
+</body>
+</html>
